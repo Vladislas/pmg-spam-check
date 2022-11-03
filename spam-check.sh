@@ -70,7 +70,7 @@ for i in $sendersent; do
         MESSAGE=`tail -n 1 $log`
         curl -s -X POST https://api.telegram.org/bot$TokenTelegram/sendMessage -d text="$MESSAGE" -d chat_id=$GroupID
         sleep 5
-        echo -e $CONTENT | mailx -s "user "$sender" Terindikasi mengirim spam" -r $EMAIL_NOTIF -b noc@dnet.net.id -c $EMAIL_NOTIF $sender
+        echo -e $CONTENT | mailx -s "user "$sender" Terindikasi mengirim spam" -r $EMAIL_NOTIF -c $EMAIL_NOTIF $sender
       fi
     fi
   fi
