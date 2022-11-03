@@ -11,7 +11,7 @@ TokenTelegram=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep desc |
 
 #### Get GROUP_TELEGRAM
 GroupID=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep desc | grep GROUP_TELEGRAM | awk '{print $3}' | grep -E -o "(-)\b([0-9]+)"`
-#GroupID='-1001622540214'
+
 
 ### get number limit sending per hour
 limit=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep regex | grep LIMIT_SENDING | awk '{print $3}' | grep -Eo "\b[0-9]+\b"`
