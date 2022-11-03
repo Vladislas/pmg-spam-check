@@ -1,0 +1,14 @@
+'Yth pelanggan.\n
+\n
+\n
+Kami informasikan bahwa akun email anda terindikasi mengirimkan spam. \n
+Saat ini akun email anda terblokir secara otomatis oleh system.\n
+Mohon reset password akun email anda secara mandiri sebagai antisipasi dan mohon hubungi kami jika telah melakukan reset password.\n
+\n
+\n
+Demikian yang dapat kami sampaikan.\n
+Atas perhatian dan kerjasamanya kami sampaikan terima kasih.\n
+\n\n
+Salam,\n
+\n\n
+***Email ini terkirim secara otomatis*** \nJika ada pertanyaan, dapat menghubungi kami.\n'
