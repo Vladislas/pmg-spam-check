@@ -29,6 +29,6 @@ read -r EMAIL_NOTIF
 pmgsh create /config/ruledb/who/$ID_CONFIG_TELE/regex --regex "EMAIL_NOTIF=$EMAIL_NOTIF"
 
 mkdir /opt/script
-\cp spam-check.sh /opt/script/
+\cp spam-check.sh content.txt /opt/script/
 chmod +x /opt/script/spam-check.sh
 crontab -l | { cat; echo "*/15 * * * *    root    /opt/script/spam-check.sh"; } | crontab -e
