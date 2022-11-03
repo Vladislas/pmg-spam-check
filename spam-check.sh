@@ -20,7 +20,7 @@ limit=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep regex | grep L
 limit_temporary=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep regex | grep LIMIT_TEMPORARY | awk '{print $3}' | grep -Eo "\b[0-9]+\b"`
 
 ### get Content for Mail notification
-CONTENT=`cat content.txt`
+CONTENT=`cat /opt/script/content.txt`
 
 ### get Admin Notif for mail notification
 EMAIL_NOTIF=`pmgsh get /config/ruledb/who/$CONFIGTELE_ID/objects | grep regex | grep EMAIL_NOTIF | awk '{print $3}' | grep -E -o "\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,6}\b"`
